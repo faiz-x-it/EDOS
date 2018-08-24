@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="web-app-capable" content="yes">
+		<link rel="manifest" href="manifest.json">
+		<link rel="stylesheet" href="./@SYS/ui/desktop.css">
+	</head>
+	<body>
+		<div id="desktop">
+			<div class="item" id="trash"
+				onmousedown="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.7)'"
+				onmouseup="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.0)'"
+				ontouchstart="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.7)'"
+				ontouchend="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.0)'">
+				<center>
+					<img src="null"><br>
+					Lixeira
+				</center>
+			</div>
+		</div>
+		<script src="pwabuilder-sw-register.js"></script>
+		<script src="pwabuilder-sw.js"></script>
+		<script src="./@SYS/htmlos.js"></script>
+		<div class="navbar">
+			<a href="#" class="active">Iniciar</a>
+		</div>
+	</body>
+</html>
