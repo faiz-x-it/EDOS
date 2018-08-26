@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 	<head>
-		<meta name="viewport" content="width=device-width">
+		<title>HTML OS</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="web-app-capable" content="yes">
-		<link rel="manifest" href="manifest.json">
-		<link rel="stylesheet" href="./@SYS/ui/desktop.css">
+		<link rel="manifest" href="/HTML-OS/manifest.json">
+		<link rel="stylesheet" href="./@APP/htmlos.system.ui/desktop.css">
 	</head>
 	<body>
+		<script src="/HTML-OS/pwabuilder-sw-register.js"></script>
+		<script src="/HTML-OS/jquery.min.js"></script>
 		<div id="desktop">
 			<div class="item" id="trash"
-				onmousedown="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.7)'"
-				onmouseup="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.0)'"
-				ontouchstart="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.7)'"
-				ontouchend="document.getElementById('trash').style.backgroundColor = 'rgba(0,74,255,0.0)'">
 				<center>
-					<img src="null"><br>
+					<img src="/HTML-OS/@APP/htmlos.system.ui/icons/trash.png" width="45px"><br>
 					Lixeira
 				</center>
 			</div>
+			<div id="fastsettingspopup">
+				<iframe width="275px" src="/HTML-OS/@APP/htmlos.settings/fastsettings.html"></iframe>
+			</div>
 		</div>
-		<script src="pwabuilder-sw-register.js"></script>
-		<script src="pwabuilder-sw.js"></script>
-		<script src="./@SYS/htmlos.js"></script>
+		<script src="/HTML-OS/@SYS/htmlos.js"></script>
 		<div class="navbar">
 			<a href="#" class="active">Iniciar</a>
+			<div class="toolbar">
+				<img id="fastsettings" onclick="fastsettings()" src="/HTML-OS/@APP/htmlos.system.ui/icons/fastsettings-disabled.png" width="33px">
+			</div>
 		</div>
 	</body>
 </html>
