@@ -5,12 +5,12 @@
   "background_color": "#333",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/HTML-OS/favicon.png",
       "type": "image/png",
       "sizes": "128x128"
     }
   ],
   "display": "fullscreen",
-  "start_url": "/index.html"
+  "start_url": "/HTML-OS/index.html"
   
 }
