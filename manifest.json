@@ -1,16 +1,16 @@
 {
-  "short_name": "HTML OS",
-  "name": "HTML OS",
+  "short_name": "EAOS",
+  "name": "EduApps Operating System",
+  "theme_color": "#333",
+  "background_color": "#333",
   "icons": [
     {
-      "src": "192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "128x128"
     }
   ],
-  "start_url": "/HTML-OS/index.html",
   "display": "fullscreen",
-  "orientation": "any",
-  "background_color": "#333333",
-  "theme_color":"#333333"
+  "start_url": "/index.html"
+  
 }

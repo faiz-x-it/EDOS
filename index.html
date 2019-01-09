@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-	<head>
-		<title>HTML OS</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="web-app-capable" content="yes">
-		<link rel="manifest" href="/HTML-OS/manifest.json">
-		<link rel="stylesheet" href="./@APP/htmlos.system.ui/desktop.css">
-	</head>
-	<body>
-		<script src="/HTML-OS/pwabuilder-sw-register.js"></script>
-		<script src="/HTML-OS/jquery.min.js"></script>
-		<div id="desktop">
-			<div class="item" id="trash"
-				<center>
-					<img src="/HTML-OS/@APP/htmlos.system.ui/icons/trash.png" width="45px"><br>
-					Lixeira
-				</center>
-			</div>
-			<div id="fastsettingspopup">
-				<iframe width="275px" src="/HTML-OS/@APP/htmlos.settings/fastsettings.html"></iframe>
-			</div>
-		</div>
-		<script src="/HTML-OS/@SYS/htmlos.js"></script>
-		<div class="navbar">
-			<a href="#" class="active">Iniciar</a>
-			<div class="toolbar">
-				<img id="fastsettings" onclick="fastsettings()" src="/HTML-OS/@APP/htmlos.system.ui/icons/fastsettings-disabled.png" width="33px">
-			</div>
-		</div>
-	</body>
-</html>
+<html>
+  <head>
+	<link rel="manifest" href="manifest.json">
+	<meta name="viewport" content="user-scalable=no,width=device-width,height=device=height">
+	<meta name="web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="128x128" href="favicon.png">
+    <link href="css/styles.css" rel="stylesheet">
+	
+	<title>EAOS</title>
+  </head>
+  <body>
+	<script src="js/scripts.js"></script>
+	<desktop>
+	  p
+	</desktop>
+	<div class="icon-bar">
+	  <a class="active" href="#"><img width="50px" src="assets/net.eduapps.home.png"></a> 
+	  <a href="#"><img width="50px" src="assets/net.eduapps.search.png"></a> 
+	  <a href="#"><img width="50px" src="assets/com.google.chrome.png"></a> 
+	  <a href="#"><img width="50px" src="assets/com.microsoft.explorer.png"></a>
+	  <a href="#"><img width="50px" src="assets/net.eduapps.trash.png"></a> 
+	</div>
+  </body>
+</html>		

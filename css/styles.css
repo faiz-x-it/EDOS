@@ -1,0 +1,96 @@
+body {
+  overflow:auto;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+	height:100vh;
+}
+
+desktop {
+  height: 100vh;
+  width:calc(100% - 50px);
+  background-color:#00CCCC;
+  float:right;
+  right:0;
+  position:absolute;
+  top:0;
+}
+
+taskbar {
+  position:absolute;
+  background-image: linear-gradient(to right,#333,#000,#555);
+  height:50px;
+  width:100vw;
+  bottom:0;
+  left:0;
+}
+
+.main::-webkit-scrollbar {
+    -webkit-appearance: none;
+	margin:0;
+}
+
+.main::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+.main::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 0, 0);
+}
+
+.main::-webkit-scrollbar-track { 
+    background-color: #000; 
+}
+
+.main::-webkit-scrollbar-button {
+  	background-color:#0f0;
+  	width:12px;
+	height:12px;
+}
+
+}
+
+.main {
+    overflow-x: scroll;
+    overflow-y: scroll;
+	width:100vw;
+	height:100vh;
+	background-color:Blue;
+}
+
+.icon-bar {
+  width: 50px; /* Set a specific width */
+  background: #555; /* Dark-grey background */
+	float:left;
+	left:0;
+	top:0;
+	white-space: nowrap !important;
+    text-overflow: ellipsis;
+	height:100vh;
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+  background: #000; /* Add a hover color */
+}
+
+.active {
+  background: #4CAF50; /* Add an active/current color */
+}
