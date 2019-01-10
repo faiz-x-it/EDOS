@@ -13,7 +13,7 @@ html,body {
 
 desktop {
   height: 100vh;
-  width:calc(100% - 50px);
+  width:calc(100vw - 75px);
   background-color:#00CCCC;
   float:right;
   right:0;
@@ -68,14 +68,27 @@ taskbar {
 }
 
 .icon-bar {
-  width: 50px; /* Set a specific width */
+  position:absolute;
+  width: 75px; /* Set a specific width */
   background: #555; /* Dark-grey background */
 	float:left;
 	left:0;
 	top:0;
-	white-space: nowrap !important;
-    text-overflow: ellipsis;
 	height:100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.icon-bar * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.icon-bar img {
+  max-width:50px;
+  max-height:50px;
 }
 
 .icon-bar a {
